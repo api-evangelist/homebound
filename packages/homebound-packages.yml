@@ -1,0 +1,48 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/org/homebound
+notes: >-
+  Homebound the homebuilder publishes no public API and therefore no API-client
+  SDK. It does, however, maintain a public GitHub organization (homebound-team)
+  and publish first-party open-source developer tooling to the @homebound npm
+  scope. These are internal engineering libraries (design system, form/CSS
+  tooling, a patched vendor SDK fork) — not clients for a Homebound API — so they
+  are recorded here as Packages but NOT wired to the canonical SDKs pointer.
+registries:
+  npm: https://www.npmjs.com/org/homebound
+github_org: https://github.com/homebound-team
+packages:
+- name: '@homebound/beam'
+  registry: npm
+  official: true
+  latest: 3.49.0
+  url: https://www.npmjs.com/package/@homebound/beam
+  repository: https://github.com/homebound-team/beam
+  description: Beam Design System — Homebound's React component library.
+  api_client: false
+- name: '@homebound/form-state'
+  registry: npm
+  official: true
+  latest: 2.31.0
+  url: https://www.npmjs.com/package/@homebound/form-state
+  repository: https://github.com/homebound-team/form-state
+  description: mobx-based library for form UX.
+  api_client: false
+- name: '@homebound/truss'
+  registry: npm
+  official: true
+  latest: 2.28.0
+  url: https://www.npmjs.com/package/@homebound/truss
+  repository: https://github.com/homebound-team/truss
+  description: A TypeScript DSL for writing utility CSS in React/JSX.
+  api_client: false
+- name: '@homebound/intacct-sdk'
+  registry: npm
+  official: true
+  latest: 2.2.2
+  url: https://www.npmjs.com/package/@homebound/intacct-sdk
+  repository: https://github.com/homebound-team/intacct-sdk-js
+  description: >-
+    Patched fork of the Sage Intacct SDK for JavaScript with Node 24 compat.
+    A vendor SDK fork for Homebound's own back-office use, not a Homebound client.
+  api_client: false

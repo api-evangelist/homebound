@@ -1,8 +1,30 @@
 aid: homebound
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/homebound.png
 name: Homebound
-description: 'Homebound is a company surfaced as a portfolio company of fifth-wall, forerunner-ventures,
-  gv and added to the API Evangelist network as a stub for enrichment. Sector: construction-tech. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Homebound is a tech-enabled, personalized homebuilder that pairs a proprietary
+  software platform with a managed network of trade partners to build homes on a
+  customer's lot, sell finished and in-progress inventory homes, and run disaster
+  rebuild programs — most notably wildfire recovery in California. Homeowners
+  track budget, schedule, documents, and construction progress through a
+  Homeowner Portal. Backed by Fifth Wall, Forerunner Ventures, and GV, Homebound
+  operates in the construction-tech sector. Homebound does not publish a public
+  developer API or developer portal; its public engineering footprint is the
+  homebound-team GitHub organization and the first-party open-source packages it
+  publishes to the @homebound npm scope (the Beam design system, form-state, and
+  truss). This profile was added to the API Evangelist network as a VC-portfolio
+  lead and enriched from public company surfaces.
 url: https://raw.githubusercontent.com/api-evangelist/homebound/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +36,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Construction Tech
+- Homebuilding
+- Real Estate
+- Proptech
+- Home Construction
+- Disaster Rebuild
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +52,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/homebound-domain-security.yml
 - type: Website
   url: https://www.homebound.com/
+- type: Blog
+  url: https://www.homebound.com/learn
+- type: Login
+  url: https://app.homebound.com
+- type: TermsOfService
+  url: https://www.homebound.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.homebound.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/homebound-team
+- type: Packages
+  url: packages/homebound-packages.yml
+- type: LLMsTxt
+  url: llms/homebound-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
