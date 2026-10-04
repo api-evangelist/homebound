@@ -52,7 +52,7 @@ tags:
 - Company
 - Construction Tech
 - Homebuilding
-- Real-Estate
+- Real Estate
 - PropTech
 - Home Construction
 - Disaster Rebuild
@@ -64,6 +64,7 @@ tags_raw:
 - Proptech
 - Home Construction
 - Disaster Rebuild
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane
